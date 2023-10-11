@@ -1,0 +1,745 @@
+* {
+    font-family: 'sence-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    background-color: #081b29;
+}
+
+/* navigation-Content */
+header {
+    height: 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 12, 12);
+    padding: 0px 4vw;
+    z-index: 9999;
+    position: relative;
+}
+
+header>i {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    transition: all ease 0.5;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    transition: all ease 0.8s;
+}
+
+nav a:hover {
+    color: #05e2eE;
+    text-shadow: 0px 0px 100px #05e2eE;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #FFB02E;
+    transition: all ease 0.2s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+span i {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Home - Code */
+.Home {
+    padding: 0vw 4.5vw;
+    padding-top: 6vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-Home {
+    padding-top: 0vw;
+}
+
+.left-Home h3 {
+    opacity: 0.7;
+    margin-top: 5px;
+    font-weight: 400;
+    width: 400px;
+
+}
+
+.rightBtn {
+    margin-top: 4vw;
+}
+
+.leftBtn {
+    margin-left: 2vw;
+}
+
+button {
+    padding: 1.1vw 2vw;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1vw;
+    background-color: transparent;
+    border: 2px solid #17c7c7;
+    box-shadow: 0px 0px 10px #17c7c7;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 99;
+    border-radius: 5px;
+    transition: all ease 0.8s;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -150%;
+    background-color: #05e2e2;
+    z-index: -9;
+    transition: all ease 0.5s;
+}
+
+button:hover::after {
+    left: 0;
+    color: #000000ff;
+}
+
+.left-Home {
+    width: 50%;
+    height: calc(100vh - 7vw);
+}
+.media{
+    margin-top: 10vw;
+}
+.socialMedia{
+    margin-left:2vw;
+    padding: 1vw;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+    background-color:transparent;
+    transition: all ease 1s;
+}
+.left-Home .media .socialMedia:hover{
+   background-color: #e90ccf;
+   color:black;
+   scale:1;
+}
+
+i {
+    overflow: hidden;
+}
+
+i:hover::after {
+    right: 0;
+}
+
+.right-Home {
+    width: 50%;
+    height: calc(100vh - 17vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-Home img {
+    box-shadow: 0px 0px 1500px #05e2e2;
+    padding: 1vw 1vw;
+    border: 2px solid #05e2e2;
+}
+
+
+/* About- code */
+.About {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.About-sect1 {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About-sect1 img {
+    border: 2px solid #fff;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 8vw;
+    box-shadow: 0px 0px 200px #179bc7;
+}
+
+.frmae {
+    padding: 2vw 2vw;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #3f8484;
+    box-shadow: 0px 0px 200px #17c7c7;
+}
+
+.frme1 {
+    padding: 3vw 3vw;
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #1cf0f069;
+    box-shadow: 0px 0px 150px #17c7c7;
+}
+
+.About-sect2{
+    width: 50%;
+    height: 84vh;
+    margin-top: 7vw;
+}
+
+.hr {
+    margin-top: 0.7vw;
+    width: 2.6vw;
+    height: 1px;
+    border: 2px solid #05e2eE;
+}
+
+.About-sect2>h1 {
+    text-shadow: 0px 0px 5px red;
+    -webkit-text-stroke: 1px #f3f0eb;
+}
+
+.about-me {
+    width: 70%;
+    margin-top: 2vw;
+    height: calc(100vw - 80vw);
+    /* background-color:red; */
+    color: #fbf4f4;
+}
+
+.about-me>h1 {
+    margin-bottom: 1vw;
+    color: #fbfaf8;
+}
+
+.about-me span {
+    line-height: 25px;
+}
+
+/*.Skill-coding */
+.Skill {
+    width: 100%;
+    height: 100vh;
+}
+
+.Skill>h1 {
+    padding-top: 8vw;
+    text-align: center;
+}
+
+.container {
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+}
+
+.skill h2 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.progress {
+    background: #959595;
+    width: 500px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.progress div {
+    height: 20px;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.progress div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+    background: yellow;
+    animation: html 2s linear forwards;
+}
+
+.css {
+    background: rgb(46, 203, 22);
+    animation: css 2s linear forwards;
+}
+
+.JavaScript {
+    background: rgb(191, 50, 184);
+    animation: JavaScript 2s linear forwards;
+}
+
+.java {
+    background: rgb(237, 27, 37);
+    animation: java 2s linear forwards;
+}
+
+.cplus {
+    background: rgb(22, 203, 191);
+    animation: cplus 2s linear forwards;
+}
+
+.dsa {
+    background: rgb(104, 6, 252);
+    animation: dsa 2s linear forwards;
+}
+
+.html span {
+    border: 1px solid yellow;
+}
+
+.css span {
+    border: 1px solid rgb(46, 203, 22);
+}
+
+.JavaScript span {
+    border: 1px solid rgb(191, 50, 184);
+}
+
+.java span {
+    border: 1px solid rgb(237, 27, 37);
+}
+
+.cplus span {
+    border: 1px solid rgb(22, 203, 191);
+}
+
+.dsa span {
+    border: 1px solid rgb(104, 6, 252);
+}
+
+@keyframes html {
+    100% {
+          width: 90%;
+    }
+}
+
+@keyframes css {
+    100% {
+          width: 80%;
+    }
+}
+
+@keyframes JavaScript {
+    100% {
+          width: 50%;
+    }
+}
+
+@keyframes java {
+    100% {
+          width: 80%;
+    }
+}
+
+@keyframes cplus {
+    100% {
+          width: 70%;
+    }
+}
+
+@keyframes dsa {
+    100% {
+          width: 60%;
+    }
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 20vh;
+}
+.left-footer {
+    display: flex;
+    align-items: center;
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+  .left-footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .Conaction {
+    margin-right: 20px;
+  }
+
+  .Conaction i {
+    font-size: 10px;
+    margin-right: 1vw;
+    color: #fffdfd; 
+    border: 1px solid #fff;
+    padding: 0.7vw;
+    font-weight: 600;
+    border-radius: 50%;
+    display: none;
+  }
+  .Conaction i:hover{
+    background-color: rgb(28, 2, 53);
+  }
+
+  .left-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .left-footer ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .left-footer ul li i {
+    margin-right: 10px;
+    font-size: 18px;
+    color:#fb0202;
+  }
+  .Conaction h1{
+    font-size: 20px;
+  }
+
+  /* Mobile menue bar */
+  .mobileMenue{
+    width: 10%; 
+    height: 5%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    right: 1%;
+    background-color: #d1d1dd;
+    border-radius: 10px;
+    z-index: 999;
+    list-style: none;
+    visibility: hidden;
+  }
+  .mobileMenue ul{
+    list-style: none;
+  }
+  .mobileMenue li a{
+    text-decoration:solid;
+  }
+  .mobileMenue li a:hover{
+    text-decoration: line-through;
+    color: red;
+  }
+  
+/* Code - for responsive */
+@media (max-width:600px) {
+
+    /* navigation-code */
+    header {
+          height: 13vw;
+    }
+
+    header ul {
+          display: none;
+    }
+
+    header>i {
+          display: block;
+          font-size: 4vh;
+    }
+
+    /* Page1-Code */
+    .Home {
+          padding-top: 6vw;
+          width: 100%;
+          height: 100vh;
+          display: inline;
+    }
+
+    .left-Home {
+          padding: 0 2vh;
+          width: 100%;
+          height: 50vh;
+    }
+
+    .left-Home h1 {
+          font-size: 30px;
+    }
+
+    .left-Home h3 {
+          width: 330px;
+          margin-bottom: 3vh;
+    }
+
+    button {
+          padding: 2.1vh 1.9vh;
+          font-size: 15px;
+    }
+
+    .media i {
+          display: none;
+    }
+
+    .right-Home {
+          width: 100%;
+          height: 40vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+    }
+
+    /* Code-for page2 */
+    .About{
+          width: 100%;
+          height: 100vh;
+          display: block;
+          position: relative;
+    }
+
+    .About-sect1 {
+          width: 100%;
+          height: 30vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+    }
+
+    .About-sect1 img {
+          border: 2px solid #fff;
+          width: 50vw;
+          height: 50vw;
+          border-radius: 25vw;
+    }
+
+    .About-sect2 {
+          padding: 0 3vh;
+          width: 100%;
+          height: 70vh;
+          margin-top: 7vw;
+    }
+
+    .about-me {
+          width: 100%;
+          height: 70%;
+    }
+
+    .about-me h1 {
+          width: 200%;
+
+    }
+
+    .about-me span {
+          font-size: 15.5px;
+    }
+
+    /* Page3 - Coding */
+    .page3>h1 {
+          padding: 3vh;
+          margin-bottom: 3vw;
+          font-size: 60px;
+          font-size: 30px;
+
+    }
+
+    .page3 {
+          height: 40vh;
+    }
+
+    .page3>h1:hover::after {
+          display: none;
+    }
+
+    /*.Skill-coding */
+    .Skill {
+          width: 100%;
+          height: 100vh;
+          padding: 5vw;
+    }
+
+    .Skill>h1 {
+          padding-top: 15vw;
+          text-align: center;
+    }
+
+    .container {
+    
+          margin-top: 0vw;
+          display: inline;
+          align-items: center;
+          justify-content: center;
+    }
+
+    .skill h2 {
+          font-weight: 500;
+          letter-spacing: 2px;
+          margin-top: 6vh;
+          margin-bottom: 20px;
+          color: #fff;
+          font-size: 20px;
+    }
+
+    .progress {
+          background: #959595;
+          width:90vw;
+          height: 15px;
+          border-radius: 10px;
+    }
+
+    .progress div {
+          height: 15px;
+          width: 0%;
+          border-radius: 10px;
+    }
+
+    .progress div span {
+          height: 35px;
+          width: 35px;
+          border-radius: 50%;
+          background: #222;
+          float: right;
+          margin-top: -10px;
+          margin-right: -15px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+    }
+
+    .html span {
+          border: 2px solid yellow;
+    }
+
+    .css span {
+          border: 2px solid rgb(46, 203, 22);
+    }
+
+    .JavaScript span {
+          border: 2px solid rgb(191, 50, 184);
+    }
+
+    .java span {
+          border: 2px solid rgb(237, 27, 37);
+    }
+
+    .cplus span {
+          border: 2px solid rgb(22, 203, 191);
+    }
+
+    .dsa span {
+          border: 2px solid rgb(104, 6, 252);
+    }
+    footer{
+          width: 100%; 
+          height: 10vh;
+        
+    }
+    .left-footer{
+          margin-top: 20vw;
+          width: 100%;
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          height: 10vh;
+    }
+    .left-footer img{
+          padding: 0.2vw;
+          background-color: #fff;
+          border: 1px solid #fff;
+    }
+    .left-footer ul {
+          list-style: none;
+          padding: 0;
+          display: none;
+    }
+    .Conaction{
+          margin-left: 10vw;
+    }
+    .Conaction i{
+          padding: 3vw;
+          margin-left: 2vw;
+          display: inline;
+    }
+    .Conaction h1{
+          display: none;
+    }
+    /* menue task */
+    .mobileMenue{
+          width: 140px; 
+          height: 100px;
+          position: absolute;
+          top:40px ;
+          text-align: center;
+          right: 1%;
+          background-color: #1313ca;
+          border-radius: 10px;
+          z-index: 999999;
+          list-style: none;
+          visibility:hidden;
+        }
+}
